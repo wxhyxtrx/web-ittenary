@@ -6,6 +6,7 @@ const ICONS = {
   moon:'<path d="M19 14A8 8 0 1 1 10 5a6.5 6.5 0 0 0 9 9z"/>',
   sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/>',
   next:'<path d="m9 6 6 6-6 6"/>',
+  edit:'<path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16zM13.5 6.5l4 4"/>',
 };
 const icon = (n) => `<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[n]}</svg>`;
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]));
@@ -97,7 +98,6 @@ function days() {
   const credits = Object.values(window.TRIP_IMAGES).map((c) => `<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.label)}</a>, ${esc(c.author)}, ${esc(c.license)}</li>`).join('');
   return header(trip.title, 'Semua hari', 'pantai.jpg') + `<div class="stack">
     <div class="list split" style="margin-top:-30px;position:relative;z-index:2">${trip.days.map((d, i) => `<button class="item" data-day="${i}"><span class="badge ${CARD_COLORS[i % 4]}">${esc(fmtDate(d.date, { day:'numeric' }))}</span><div><b>${esc(d.title)}</b><small>${esc(fmtDate(d.date, { day:'numeric', month:'short' }))} · ${esc(d.area)}</small></div></button>`).join('')}</div>
-    <a class="btn ghost" href="/edit">Edit konten</a>
     <details class="sub"><summary>Sumber foto</summary><ul>${credits}</ul><p>Foto diperkecil. Lisensi CC BY-SA berlaku untuk foto terkait.</p></details>
   </div>`;
 }
@@ -124,7 +124,7 @@ function render() {
   document.getElementById('view').innerHTML = { today, days, packing, checks }[tab]();
   const nav = document.getElementById('nav');
   nav.hidden = false;
-  nav.innerHTML = NAV.map(([id, label]) => `<button data-tab="${id}" aria-label="${label}" title="${label}" ${tab === id ? 'aria-current="page"' : ''}>${icon(id)}</button>`).join('');
+  nav.innerHTML = NAV.map(([id, label]) => `<button data-tab="${id}" aria-label="${label}" title="${label}" ${tab === id ? 'aria-current="page"' : ''}>${icon(id)}</button>`).join('') + `<a href="/edit" aria-label="Edit konten" title="Edit konten">${icon('edit')}</a>`;
   const pills = document.querySelector('.pills'), active = pills?.querySelector('[aria-pressed="true"]');
   if (active) pills.scrollLeft = active.offsetLeft - pills.offsetLeft - (pills.clientWidth - active.offsetWidth) / 2;
 }
