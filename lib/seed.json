@@ -141,7 +141,7 @@
         { "event": "Le Cliff", "aay": "Polka dot dress", "wull": "Beige shirt, dark brown pants, brown shoes" }
       ],
       "meals": { "breakfast": "Colloseum", "lunch": "Rekomendasi Dek Icha yang ke arah hotel", "dinner": "Le Cliff?" },
-      "open": ["Check-in villa mulai 15:00", "Tempat makan dari Dek Icha", "Reservasi Le Cliff"]
+      "open": ["Check-in villa mulai 15:00", "Tempat makan dari Dek Icha", "Reservasi Le Cliff", "Sepatu Aay untuk polka dot dress di Le Cliff"]
     },
     {
       "date": "2026-12-04", "title": "Hari terakhir", "area": "Seminyak dan Canggu", "timezone": "WITA", "image": "uluwatu.jpg",
@@ -155,7 +155,7 @@
         { "event": "Airport", "aay": "", "wull": "" }
       ],
       "meals": { "breakfast": "", "lunch": "", "dinner": "" },
-      "open": ["Tempat main", "Jam berangkat ke bandara", "Outfit airport"]
+      "open": ["Tempat main", "Jam berangkat ke bandara", "Outfit airport", "Baju Wull untuk pulang setelah mengantar Aay"]
     },
     {
       "date": "2026-12-05", "title": "Aay tiba di Tokyo", "area": "Tokyo", "timezone": "JST", "image": "uluwatu.jpg",
@@ -219,7 +219,21 @@
       { "category": "Ndaki", "item": "Baju ndaki sewaan", "days": 1 },
       { "category": "Lainnya", "item": "Charger dan power bank", "days": 0 },
       { "category": "Lainnya", "item": "Obat pribadi", "days": 0 },
-      { "category": "Lainnya", "item": "Sunscreen", "days": 0 }
+      { "category": "Lainnya", "item": "Sunscreen", "days": 0 },
+      { "category": "Bali 2-4 Des", "item": "Paspor dan tiket Aay", "days": 0 },
+      { "category": "Bali 2-4 Des", "item": "KTP", "days": 0 },
+      { "category": "Bali 2-4 Des", "item": "Bukti booking Pinggan Caldera dan Beten Kepah", "days": 0 },
+      { "category": "Bali 2-4 Des", "item": "Charger", "days": 0 },
+      { "category": "Bali 2-4 Des", "item": "Power bank", "days": 0 },
+      { "category": "Bali 2-4 Des", "item": "Kabel mobil", "days": 0 },
+      { "category": "Bali 2-4 Des", "item": "Jaket tipis untuk Kintamani", "days": 0 },
+      { "category": "Bali 2-4 Des", "item": "Baju tidur untuk 2 malam", "days": 0 },
+      { "category": "Bali 2-4 Des", "item": "Pakaian dalam", "days": 0 },
+      { "category": "Bali 2-4 Des", "item": "Perlengkapan mandi", "days": 0 },
+      { "category": "Bali 2-4 Des", "item": "Sunscreen", "days": 0 },
+      { "category": "Bali 2-4 Des", "item": "Kacamata hitam", "days": 0 },
+      { "category": "Bali 2-4 Des", "item": "Obat pribadi", "days": 0 },
+      { "category": "Bali 2-4 Des", "item": "Sandal santai", "days": 0 }
     ]
   },
   "checks": [

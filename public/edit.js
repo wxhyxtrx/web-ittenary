@@ -9,6 +9,7 @@ const NEW_ROW = {
 };
 
 let trip, updatedAt, dirty = false, section = 'day', dayIndex = 0, person = 'Aay', message = '';
+const openPanels = new Set();
 
 const getAt = (path) => path.reduce((o, k) => o[k], trip);
 const setAt = (path, value) => { getAt(path.slice(0, -1))[path.at(-1)] = value; dirty = true; };
@@ -18,6 +19,7 @@ function input(label, path, type = 'text') {
   const attrs = `id="${id}" class="input" data-path='${esc(JSON.stringify(path))}'`;
   const value = getAt(path);
   const control = type === 'area' ? `<textarea ${attrs} rows="2">${esc(value)}</textarea>`
+    : type === 'category' ? `<input ${attrs} type="text" list="categories" value="${esc(value)}">`
     : `<input ${attrs} type="${type}" value="${esc(value)}"${type === 'number' ? ' min="0" step="1"' : ''}>`;
   return `<label class="field" for="${id}">${label}${control}</label>`;
 }
@@ -51,19 +53,28 @@ function dayForm() {
   <p class="label">Belum pasti</p><section class="list">${d.open.map((_, i) => `<div class="edit-row">${input('Catatan', [...p, 'open', i])}${removeBtn([...p, 'open'], i)}</div>`).join('') || '<p class="sub">Tidak ada.</p>'}</section>${addBtn([...p, 'open'], 'open', 'Tambah catatan')}`;
 }
 
+const panel = (key, summary, body) => `<details class="acc" data-panel="${esc(key)}" ${openPanels.has(key) ? 'open' : ''}><summary>${summary}</summary><div class="acc-body">${body}</div></details>`;
+
 function packingForm() {
   const list = trip.packing[person], p = ['packing', person];
+  const cats = [...new Set(list.map((it) => it.category))];
+  const rows = (cat) => list.map((it, i) => (it.category === cat ? `<div class="pack-row">${input('Barang', [...p, i, 'item'])}${input('Kategori', [...p, i, 'category'], 'category')}${input('Hari', [...p, i, 'days'], 'number')}${removeBtn(p, i)}</div>` : '')).join('');
   return `<div class="tabs">${Object.keys(trip.packing).map((n) => `<button type="button" data-person="${esc(n)}" aria-pressed="${n === person}">${esc(n)}</button>`).join('')}</div>
-  <section class="list">${list.map((_, i) => `<div class="edit-row grid">${input('Barang', [...p, i, 'item'])}${input('Kategori', [...p, i, 'category'])}${input('Dipakai berapa hari', [...p, i, 'days'], 'number')}${removeBtn(p, i)}</div>`).join('')}</section>
-  <button class="btn ghost" type="button" data-add-packing>Tambah barang</button>`;
+  <datalist id="categories">${cats.map((c) => `<option value="${esc(c)}">`).join('')}</datalist>
+  ${cats.map((c) => panel(`${person}|${c}`, `<span>${esc(c || 'Tanpa kategori')}</span><small>${list.filter((it) => it.category === c).length} barang</small>`, `${rows(c)}<button class="btn ghost" type="button" data-add-packing="${esc(c)}">Tambah barang</button>`)).join('')}
+  ${cats.length ? '' : '<button class="btn ghost" type="button" data-add-packing="Baju">Tambah barang</button>'}
+  <p class="sub">Ketik nama baru di Kategori untuk membuat kategori baru.</p>`;
 }
+
+const STATUS_LABEL = { aman:'Aman', mepet:'Mepet', bentrok:'Bentrok' };
+const checkSummary = (c) => `<span class="sum">${esc(c.date)} · ${esc(c.title || 'Tanpa judul')}</span><small>${STATUS_LABEL[c.status]}</small>`;
 
 function checksForm() {
   const dates = trip.days.map((d) => [d.date, d.date]);
-  return `<section class="list">${trip.checks.map((_, i) => {
+  return `${trip.checks.map((c, i) => {
     const r = ['checks', i];
-    return `<div class="edit-row grid">${select('Tanggal', [...r, 'date'], dates)}${select('Status', [...r, 'status'], [['aman', 'Aman'], ['mepet', 'Mepet'], ['bentrok', 'Bentrok']])}${input('Judul', [...r, 'title'])}${input('Catatan', [...r, 'note'], 'area')}${removeBtn(['checks'], i)}</div>`;
-  }).join('')}</section>${addBtn(['checks'], 'checks', 'Tambah cek jadwal')}`;
+    return panel(`check|${i}`, checkSummary(c), `<div class="edit-row grid">${select('Tanggal', [...r, 'date'], dates)}${select('Status', [...r, 'status'], Object.entries(STATUS_LABEL))}${input('Judul', [...r, 'title'])}${input('Catatan', [...r, 'note'], 'area')}</div>${removeBtn(['checks'], i)}`);
+  }).join('')}${addBtn(['checks'], 'checks', 'Tambah cek jadwal')}`;
 }
 
 function notesForm() {
@@ -135,9 +146,19 @@ document.addEventListener('change', (e) => {
   const { path, flag } = e.target.dataset;
   if (path) {
     const value = e.target.type === 'number' ? Math.max(0, Math.floor(Number(e.target.value) || 0)) : e.target.value;
-    setAt(JSON.parse(path), value);
+    const parsed = JSON.parse(path);
+    setAt(parsed, value);
+    if (parsed.at(-1) === 'category') { openPanels.add(`${person}|${value}`); render(); }
+    if (parsed[0] === 'checks') e.target.closest('details').querySelector('summary').innerHTML = checkSummary(trip.checks[parsed[1]]);
   } else if (flag) setAt(JSON.parse(flag), e.target.checked);
 });
+
+// Event toggle tidak bubble, jadi perlu capture supaya panel tetap terbuka setelah render ulang.
+document.addEventListener('toggle', (e) => {
+  const key = e.target.dataset?.panel;
+  if (key === undefined) return;
+  if (e.target.open) openPanels.add(key); else openPanels.delete(key);
+}, true);
 
 document.addEventListener('input', (e) => { if (e.target.dataset.path) { message = 'Belum disimpan'; dirty = true; } });
 
@@ -147,8 +168,13 @@ document.addEventListener('click', (e) => {
   const d = b.dataset;
   if (d.section) section = d.section;
   else if (d.person) person = d.person;
-  else if (d.add) { getAt(JSON.parse(d.add)).push(NEW_ROW[d.kind]()); dirty = true; }
-  else if ('addPacking' in d) { trip.packing[person].push({ category:'Baju', item:'', days:1 }); dirty = true; }
+  else if (d.add) {
+    const list = getAt(JSON.parse(d.add));
+    list.push(NEW_ROW[d.kind]());
+    dirty = true;
+    if (d.kind === 'checks') openPanels.add(`check|${list.length - 1}`);
+  }
+  else if ('addPacking' in d) { trip.packing[person].push({ category:d.addPacking, item:'', days:1 }); dirty = true; openPanels.add(`${person}|${d.addPacking}`); }
   else if (d.remove) { getAt(JSON.parse(d.remove)).splice(Number(d.index), 1); dirty = true; message = 'Belum disimpan'; }
   else if ('save' in d) { document.activeElement?.blur(); saveTrip(); return; }
   else return;
