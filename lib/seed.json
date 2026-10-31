@@ -1,0 +1,237 @@
+{
+  "title": "Banyuwangi & Bali",
+  "people": ["Aay", "Wull"],
+  "notes": [
+    "Aay tidak suka ayam: sampaikan saat pesan lunch box dan paket makan.",
+    "Banyuwangi memakai WIB. Bali memakai WITA, satu jam lebih cepat."
+  ],
+  "days": [
+    {
+      "date": "2026-11-25", "title": "Berangkat ke Bali", "area": "Banyuwangi ke Bali", "timezone": "WIB/WITA", "image": "pelabuhan.jpg",
+      "items": [
+        { "time": "08:00-09:00 WIB", "text": "Wull berangkat dari rumah naik mobil", "tentative": true },
+        { "time": "Sore", "text": "Menginap di OYO 734 Tuban Torres Accommodation" }
+      ],
+      "outfits": [],
+      "meals": { "breakfast": "", "lunch": "", "dinner": "" },
+      "open": []
+    },
+    {
+      "date": "2026-11-26", "title": "Jemput Aay", "area": "Bali ke Banyuwangi", "timezone": "WITA/WIB", "image": "pelabuhan.jpg",
+      "items": [
+        { "time": "09:30 WITA", "text": "Aay tiba di bandara Bali" },
+        { "time": "Setelah tiba", "text": "Bersih-bersih di OYO, lalu check-out" },
+        { "time": "Siang", "text": "Makan di area Denpasar kalau lapar" },
+        { "time": "Setelah makan", "text": "Berangkat ke Pelabuhan Gilimanuk, istirahat beberapa kali di jalan" },
+        { "time": "Setelah nyebrang", "text": "Jemput adik Aay di Stasiun Ketapang, lalu pulang" }
+      ],
+      "outfits": [{ "event": "Seharian", "aay": "Comfort OOTD", "wull": "Comfort OOTD" }],
+      "meals": { "breakfast": "", "lunch": "Warung Pink Tempong / Nasi Tempong Indra", "dinner": "Sate pinggir jalan?" },
+      "open": ["Jam kereta adik Aay di Stasiun Ketapang"]
+    },
+    {
+      "date": "2026-11-27", "title": "Engagement dan malam ke Ijen", "area": "Banyuwangi", "timezone": "WIB", "image": "pantai.jpg",
+      "items": [
+        { "time": "Pagi", "text": "Engagement, nganterin Aal" },
+        { "time": "Siang", "text": "Ke ayah" },
+        { "time": "13:00 atau 16:00", "text": "Ambil baju ndaki", "mapsUrl": "https://maps.app.goo.gl/TzACzcqJP8SGGRZTA", "tentative": true },
+        { "time": "Sore", "text": "Check-in Bukit Langit Camp" },
+        { "time": "23:00-00:00", "text": "Dijemput untuk Private Trip Kawah Ijen" }
+      ],
+      "outfits": [
+        { "event": "Engagement dan seharian", "aay": "White satin blouse, dusty blue long skirt, updo hair, black slingback", "wull": "Blue-white stripe shirt, white long pants, brown shoes" },
+        { "event": "Ndaki", "aay": "", "wull": "" }
+      ],
+      "meals": { "breakfast": "Rumah", "lunch": "Dapur Wangi Seafood Nusantara / Ikan Bakar Mina Elang Buana", "dinner": "Hotel" },
+      "open": ["Jam pasti ambil baju ndaki", "Titik jemput trip Ijen", "Outfit ndaki"]
+    },
+    {
+      "date": "2026-11-28", "title": "Kawah Ijen", "area": "Ijen dan Banyuwangi", "timezone": "WIB", "image": "ijen.jpg",
+      "items": [
+        { "time": "01:00-01:30", "text": "Perjalanan ke Paltuding" },
+        { "time": "01:30-02:00", "text": "Briefing dan persiapan" },
+        { "time": "02:00-05:00", "text": "Pendakian ke Puncak Kawah Ijen dan Blue Fire" },
+        { "time": "05:00-07:00", "text": "Sunrise Point dan Hutan Mati" },
+        { "time": "07:00-09:00", "text": "Turun ke Paltuding" },
+        { "time": "09:00-10:30", "text": "Kembali ke kota Banyuwangi, trip selesai" },
+        { "time": "Sore", "text": "Balikin baju ndaki", "mapsUrl": "https://maps.app.goo.gl/TzACzcqJP8SGGRZTA" },
+        { "time": "Sore", "text": "Foto latar biru, jam belum dibooking", "mapsUrl": "https://maps.app.goo.gl/o12PNwt9fAtMGijQA", "tentative": true },
+        { "time": "Malam", "text": "Nongki sama Annabelle, kafe belum ditentukan", "tentative": true }
+      ],
+      "outfits": [
+        { "event": "Foto latar biru", "aay": "Kemeja putih", "wull": "Kemeja putih" },
+        { "event": "Nongki sama Annabelle", "aay": "Knit white off-shoulder, flare denim jeans, white sneakers/loafer", "wull": "Grey shirt, black long pants, black/white sneakers" }
+      ],
+      "meals": { "breakfast": "", "lunch": "Rujak Soto Mba Ani", "dinner": "Kafe nongkrong" },
+      "open": ["Jam foto latar biru", "Kafe nongkrong"]
+    },
+    {
+      "date": "2026-11-29", "title": "Pulau Tabuhan", "area": "Bangsring", "timezone": "WIB", "image": "selat.jpg",
+      "items": [
+        { "time": "Sebelum 07:30", "text": "Tiba di meeting point Pantai Grand Watudodol" },
+        { "time": "07:45", "text": "Briefing, fitting alat, dan persiapan" },
+        { "time": "08:00", "text": "Menyeberang ke Pulau Tabuhan" },
+        { "time": "08:45", "text": "Keliling pulau dan foto di takat pasir" },
+        { "time": "10:00", "text": "Snorkeling dan foto underwater" },
+        { "time": "11:00-12:00", "text": "Slot jetski 15 menit dan 2 paddle board 20 menit, dengan drone", "tentative": true },
+        { "time": "12:00", "text": "Makan siang lunch box" },
+        { "time": "Paling lambat 16:00", "text": "Selesai di Tabuhan dan kembali ke Grand Watudodol" }
+      ],
+      "outfits": [
+        { "event": "Tabuhan", "aay": "White shirt (black tanktop), short dark wash denim pants, white sneakers", "wull": "Soft blue shirt, white tshirt, cream pants, white sneakers" },
+        { "event": "Jetski dan snorkeling", "aay": "White swimdress dan baju renang", "wull": "Baju renang" }
+      ],
+      "meals": { "breakfast": "Nasi Cawuk", "lunch": "Bekal Tabuhan", "dinner": "Langsung pulang" },
+      "open": []
+    },
+    {
+      "date": "2026-11-30", "title": "Green Island dan Djawatan", "area": "Banyuwangi selatan", "timezone": "WIB", "image": "djawatan.jpg",
+      "items": [
+        { "time": "Sekitar 09:00", "text": "Kumpul di Pantai Pancer untuk Private Trip Paket B", "mapsUrl": "https://maps.app.goo.gl/CJY7GwVqm99tNNgk7", "tentative": true },
+        { "time": "Setelah kumpul", "text": "Puncak Green Island, Pantai Green Island, Spot T, Pantai Wedi Ireng, dan Icon Bedil (tentatif)" },
+        { "time": "Setelah Green Island", "text": "Djawatan" }
+      ],
+      "outfits": [
+        { "event": "Green Island", "aay": "White long dress, contrast leather sandals, loose curls hair", "wull": "White shirt, cream short pants, brown shoes" },
+        { "event": "Djawatan", "aay": "Cream dress, contrast leather sandals", "wull": "Beige shirt, white long pants, brown shoes" }
+      ],
+      "meals": { "breakfast": "Rumah", "lunch": "Kampung Bethik Djawatan", "dinner": "Mie Nyonyor / Sego Tempong Mbak Nurul / Rawon Mbok Watik" },
+      "open": ["Jam pasti berangkat Green Island", "Jam selesai Green Island"]
+    },
+    {
+      "date": "2026-12-01", "title": "Main sama Aal dan Habib", "area": "Songgon dan Bangsring", "timezone": "WIB", "image": "pantai.jpg",
+      "items": [
+        { "time": "Pagi", "text": "Jemput Aal dan Habib di rumah" },
+        { "time": "Belum booking", "text": "Rafting Kali Sawah paket Adventure, sekitar 4,5 km, 1,5-2 jam", "mapsUrl": "https://maps.app.goo.gl/VyKH35fESNABTKTh6", "tentative": true },
+        { "time": "Belum booking", "text": "Bangsring Underwater", "tentative": true },
+        { "time": "Malam", "text": "Packing" }
+      ],
+      "outfits": [
+        { "event": "Seharian", "aay": "Maroon knit-top, black long pants, black loafer", "wull": "Maroon polo shirt, black long pants, black loafer" },
+        { "event": "Snorkeling", "aay": "Swimwear", "wull": "Swimwear" }
+      ],
+      "meals": { "breakfast": "Rumah", "lunch": "Bakso Urat Bang Kevin / Pondok Apung Rogojampi", "dinner": "Bangsring Resto" },
+      "open": ["Booking rafting", "Booking Bangsring Underwater", "Paket rafting sudah termasuk makan, cek rencana makan siang"]
+    },
+    {
+      "date": "2026-12-02", "title": "Kemarang lalu ke Kintamani", "area": "Banyuwangi ke Bali", "timezone": "WIB/WITA", "image": "batur.jpg",
+      "items": [
+        { "time": "07:00 WIB", "text": "Berangkat ke Kemarang" },
+        { "time": "08:00 WIB", "text": "Reservasi Kemarang", "mapsUrl": "https://maps.app.goo.gl/BsYi5y2ni3knYz9u9" },
+        { "time": "13:00 WIB", "text": "Nyebrang ke Bali" },
+        { "time": "15:00 WITA", "text": "Tiba di Bali" },
+        { "time": "18:00-19:00 WITA", "text": "Tiba di Pinggan Caldera Hotel Kintamani", "mapsUrl": "https://maps.app.goo.gl/X8ctCrNGFBry3dEC9" }
+      ],
+      "outfits": [{ "event": "Kemarang", "aay": "Navy knit top, cream long pants, black loafer", "wull": "Navy shirt, cream/white long pants, black loafer" }],
+      "meals": { "breakfast": "Kemarang", "lunch": "", "dinner": "" },
+      "open": []
+    },
+    {
+      "date": "2026-12-03", "title": "Colloseum dan Le Cliff", "area": "Kintamani ke Uluwatu", "timezone": "WITA", "image": "uluwatu.jpg",
+      "items": [
+        { "time": "07:00", "text": "Check-out Pinggan Caldera Hotel" },
+        { "time": "08:00", "text": "Tiba di Colloseum", "mapsUrl": "https://maps.app.goo.gl/kbESgq79Lmppniew9" },
+        { "time": "09:30", "text": "Berangkat ke Denpasar" },
+        { "time": "12:00", "text": "Tiba di Denpasar, makan siang" },
+        { "time": "15:00", "text": "Check-in Beten Kepah Villas, Pecatu", "mapsUrl": "https://maps.app.goo.gl/71G4mswi3CeZwCaN6" },
+        { "time": "Sore", "text": "Sunset di Le Cliff, belum reservasi", "tentative": true }
+      ],
+      "outfits": [
+        { "event": "Colloseum", "aay": "Black crop top, black mini skirt, black slingback", "wull": "Black shirt, black long pants, black loafer" },
+        { "event": "Le Cliff", "aay": "Polka dot dress", "wull": "Beige shirt, dark brown pants, brown shoes" }
+      ],
+      "meals": { "breakfast": "Colloseum", "lunch": "Rekomendasi Dek Icha yang ke arah hotel", "dinner": "Le Cliff?" },
+      "open": ["Check-in villa mulai 15:00", "Tempat makan dari Dek Icha", "Reservasi Le Cliff"]
+    },
+    {
+      "date": "2026-12-04", "title": "Hari terakhir", "area": "Seminyak dan Canggu", "timezone": "WITA", "image": "uluwatu.jpg",
+      "items": [
+        { "time": "Sebelum 12:00", "text": "Check-out Beten Kepah Villas" },
+        { "time": "Siang-sore", "text": "Main di sekitar Seminyak dan Canggu", "tentative": true },
+        { "time": "20:40", "text": "Penerbangan Aay dari Ngurah Rai" }
+      ],
+      "outfits": [
+        { "event": "Main", "aay": "Navy knit gold button, white mini skirt, black slingback", "wull": "Navy polo shirt, white long pants, black/brown loafer" },
+        { "event": "Airport", "aay": "", "wull": "" }
+      ],
+      "meals": { "breakfast": "", "lunch": "", "dinner": "" },
+      "open": ["Tempat main", "Jam berangkat ke bandara", "Outfit airport"]
+    },
+    {
+      "date": "2026-12-05", "title": "Aay tiba di Tokyo", "area": "Tokyo", "timezone": "JST", "image": "uluwatu.jpg",
+      "items": [{ "time": "07:15", "text": "Tiba di bandara Tokyo" }],
+      "outfits": [],
+      "meals": { "breakfast": "", "lunch": "", "dinner": "" },
+      "open": ["Haneda atau Narita"]
+    }
+  ],
+  "packing": {
+    "Aay": [
+      { "category": "Baju", "item": "White satin blouse", "days": 1 },
+      { "category": "Baju", "item": "Dusty blue long skirt", "days": 1 },
+      { "category": "Baju", "item": "Kemeja putih", "days": 2 },
+      { "category": "Baju", "item": "Knit white off-shoulder", "days": 1 },
+      { "category": "Baju", "item": "Flare denim jeans", "days": 1 },
+      { "category": "Baju", "item": "Black tanktop", "days": 1 },
+      { "category": "Baju", "item": "Short dark wash denim pants", "days": 1 },
+      { "category": "Baju", "item": "White long dress", "days": 1 },
+      { "category": "Baju", "item": "Cream dress", "days": 1 },
+      { "category": "Baju", "item": "Maroon knit-top", "days": 1 },
+      { "category": "Baju", "item": "Black long pants", "days": 1 },
+      { "category": "Baju", "item": "Navy knit top", "days": 1 },
+      { "category": "Baju", "item": "Cream long pants", "days": 1 },
+      { "category": "Baju", "item": "Black crop top", "days": 1 },
+      { "category": "Baju", "item": "Black mini skirt", "days": 1 },
+      { "category": "Baju", "item": "Polka dot dress", "days": 1 },
+      { "category": "Baju", "item": "Navy knit gold button", "days": 1 },
+      { "category": "Baju", "item": "White mini skirt", "days": 1 },
+      { "category": "Sepatu", "item": "Black slingback", "days": 3 },
+      { "category": "Sepatu", "item": "White sneakers", "days": 2 },
+      { "category": "Sepatu", "item": "Black loafer", "days": 2 },
+      { "category": "Sepatu", "item": "Contrast leather sandals", "days": 1 },
+      { "category": "Renang", "item": "White swimdress", "days": 1 },
+      { "category": "Renang", "item": "Baju renang", "days": 2 }
+    ],
+    "Wull": [
+      { "category": "Baju", "item": "Blue-white stripe shirt", "days": 1 },
+      { "category": "Baju", "item": "White long pants", "days": 3 },
+      { "category": "Baju", "item": "Kemeja putih", "days": 2 },
+      { "category": "Baju", "item": "Grey shirt", "days": 1 },
+      { "category": "Baju", "item": "Black long pants", "days": 3 },
+      { "category": "Baju", "item": "Soft blue shirt", "days": 1 },
+      { "category": "Baju", "item": "White t-shirt", "days": 1 },
+      { "category": "Baju", "item": "Cream pants", "days": 1 },
+      { "category": "Baju", "item": "Cream short pants", "days": 1 },
+      { "category": "Baju", "item": "Beige shirt", "days": 2 },
+      { "category": "Baju", "item": "Maroon polo shirt", "days": 1 },
+      { "category": "Baju", "item": "Navy shirt", "days": 1 },
+      { "category": "Baju", "item": "Black shirt", "days": 1 },
+      { "category": "Baju", "item": "Dark brown pants", "days": 1 },
+      { "category": "Baju", "item": "Navy polo shirt", "days": 1 },
+      { "category": "Sepatu", "item": "Brown shoes", "days": 3 },
+      { "category": "Sepatu", "item": "Black loafer", "days": 3 },
+      { "category": "Sepatu", "item": "White sneakers", "days": 1 },
+      { "category": "Renang", "item": "Baju renang", "days": 2 }
+    ],
+    "Bersama": [
+      { "category": "Dokumen", "item": "KTP dan paspor", "days": 0 },
+      { "category": "Dokumen", "item": "Bukti booking hotel dan trip", "days": 0 },
+      { "category": "Ndaki", "item": "Baju ndaki sewaan", "days": 1 },
+      { "category": "Lainnya", "item": "Charger dan power bank", "days": 0 },
+      { "category": "Lainnya", "item": "Obat pribadi", "days": 0 },
+      { "category": "Lainnya", "item": "Sunscreen", "days": 0 }
+    ]
+  },
+  "checks": [
+    { "date": "2026-11-25", "title": "Banyuwangi ke Tuban", "status": "aman", "note": "Berangkat 08:00-09:00 WIB, perkiraan tiba sore WITA." },
+    { "date": "2026-11-26", "title": "Bandara ke Ketapang", "status": "mepet", "note": "Kalau berangkat dari Denpasar 13:00 WITA, perkiraan tiba di Ketapang 17:30-18:30 WIB. Cocokkan dengan jam kereta adik Aay." },
+    { "date": "2026-11-27", "title": "Engagement ke Ijen", "status": "mepet", "note": "Ambil baju ndaki sekitar 13:00 atau 16:00. Waktu tidur sangat pendek, jadi tidur setelah makan malam." },
+    { "date": "2026-11-28", "title": "Selesai Ijen", "status": "aman", "note": "Trip selesai 10:30 di kota. Sore masih cukup setelah istirahat kalau foto dibooking 15:00 atau lebih." },
+    { "date": "2026-11-29", "title": "Tabuhan dan jetski", "status": "aman", "note": "Waktu di Tabuhan paling lambat sampai 16:00, jadi slot jetski 11:00-12:00 masih bisa masuk." },
+    { "date": "2026-11-30", "title": "Green Island ke Djawatan", "status": "mepet", "note": "Jam berangkat dan selesai belum pasti. Tanyakan juga jam tutup Djawatan." },
+    { "date": "2026-12-01", "title": "Rafting ke Bangsring", "status": "mepet", "note": "Lokasinya berjauhan dan keduanya belum booking. Rafting pagi lebih aman, dan paket Adventure sudah termasuk makan." },
+    { "date": "2026-12-02", "title": "Banyuwangi ke Kintamani", "status": "aman", "note": "13:00 WIB ke 15:00 WITA sudah menghitung selisih waktu, tetapi belum termasuk antrean kapal." },
+    { "date": "2026-12-03", "title": "Check-in dan Le Cliff", "status": "mepet", "note": "Check-in villa mulai 15:00, bukan sebelum 15:00. Reservasi Le Cliff belum ada." },
+    { "date": "2026-12-04", "title": "Berangkat ke bandara", "status": "mepet", "note": "Untuk penerbangan 20:40, targetkan di bandara sekitar 17:40. Dari Seminyak atau Canggu, berangkat sekitar 16:00-16:30." }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "liburan-aay-wull",
+  "private": true,
+  "engines": { "node": "22.x" },
+  "scripts": {
+    "dev": "node dev-server.js",
+    "test": "node --test test/server.test.js"
+  }
+}
