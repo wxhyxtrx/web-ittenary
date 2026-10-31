@@ -85,7 +85,7 @@ function notesForm() {
 function render() {
   const sections = [['day', 'Hari'], ['packing', 'Packing'], ['checks', 'Cek jadwal'], ['notes', 'Umum']];
   const body = { day:dayForm, packing:packingForm, checks:checksForm, notes:notesForm }[section]();
-  view.innerHTML = `<div class="stack" style="max-width:860px;margin:0 auto;padding-bottom:20px">
+  view.innerHTML = `<div class="stack" style="width:100%;max-width:860px;margin:0 auto;padding-bottom:20px">
     <h1 class="page-title">Edit konten</h1>
     <div class="tabs">${sections.map(([id, t]) => `<button type="button" data-section="${id}" aria-pressed="${id === section}">${t}</button>`).join('')}</div>
     ${body}</div>
