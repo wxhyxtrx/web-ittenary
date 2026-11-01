@@ -10,7 +10,7 @@
       "date": "2026-11-25", "title": "Berangkat ke Bali", "area": "Banyuwangi ke Bali", "timezone": "WIB/WITA", "image": "pelabuhan.jpg",
       "items": [
         { "time": "08:00-09:00 WIB", "text": "Wull berangkat dari rumah naik mobil", "tentative": true },
-        { "time": "Sore", "text": "Menginap di OYO 734 Tuban Torres Accommodation" }
+        { "time": "Sore", "text": "Menginap di OYO 734 Tuban Torres Accommodation", "mapsUrl": "https://maps.app.goo.gl/nxkzX74bxV6qPhcGA" }
       ],
       "outfits": [],
       "meals": { "breakfast": "", "lunch": "", "dinner": "" },
@@ -20,7 +20,7 @@
       "date": "2026-11-26", "title": "Jemput Aay", "area": "Bali ke Banyuwangi", "timezone": "WITA/WIB", "image": "pelabuhan.jpg",
       "items": [
         { "time": "09:30 WITA", "text": "Aay tiba di bandara Bali" },
-        { "time": "Setelah tiba", "text": "Bersih-bersih di OYO, lalu check-out" },
+        { "time": "Setelah tiba", "text": "Bersih-bersih di OYO, lalu check-out", "mapsUrl": "https://maps.app.goo.gl/nxkzX74bxV6qPhcGA" },
         { "time": "Siang", "text": "Makan di area Denpasar kalau lapar" },
         { "time": "Setelah makan", "text": "Berangkat ke Pelabuhan Gilimanuk, istirahat beberapa kali di jalan" },
         { "time": "Setelah nyebrang", "text": "Jemput adik Aay di Stasiun Ketapang, lalu pulang" }
@@ -35,7 +35,7 @@
         { "time": "Pagi", "text": "Engagement, nganterin Aal" },
         { "time": "Siang", "text": "Ke ayah" },
         { "time": "13:00 atau 16:00", "text": "Ambil baju ndaki", "mapsUrl": "https://maps.app.goo.gl/TzACzcqJP8SGGRZTA", "tentative": true },
-        { "time": "Sore", "text": "Check-in Bukit Langit Camp" },
+        { "time": "Sore", "text": "Check-in Bukit Langit Camp", "mapsUrl": "https://maps.app.goo.gl/NmzMdLXWYgAZetMC6" },
         { "time": "23:00-00:00", "text": "Dijemput untuk Private Trip Kawah Ijen" }
       ],
       "outfits": [
@@ -134,7 +134,7 @@
         { "time": "09:30", "text": "Berangkat ke Denpasar" },
         { "time": "12:00", "text": "Tiba di Denpasar, makan siang" },
         { "time": "15:00", "text": "Check-in Beten Kepah Villas, Pecatu", "mapsUrl": "https://maps.app.goo.gl/71G4mswi3CeZwCaN6" },
-        { "time": "Sore", "text": "Sunset di Le Cliff, belum reservasi", "tentative": true }
+        { "time": "Sore", "text": "Sunset di Le Cliff, belum reservasi", "mapsUrl": "https://maps.app.goo.gl/YhMwY4XCThtj22g46", "tentative": true }
       ],
       "outfits": [
         { "event": "Colloseum", "aay": "Black crop top, black mini skirt, black slingback", "wull": "Black shirt, black long pants, black loafer" },
