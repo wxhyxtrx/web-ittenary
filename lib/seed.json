@@ -19,11 +19,11 @@
     {
       "date": "2026-11-26", "title": "Jemput Aay", "area": "Bali ke Banyuwangi", "timezone": "WITA/WIB", "image": "pelabuhan.jpg",
       "items": [
-        { "time": "09:30 WITA", "text": "Aay tiba di bandara Bali" },
+        { "time": "09:30 WITA", "text": "Aay tiba di bandara Bali", "mapsUrl": "https://maps.app.goo.gl/1DEm3zJNr4r8DwTX7" },
         { "time": "Setelah tiba", "text": "Bersih-bersih di OYO, lalu check-out", "mapsUrl": "https://maps.app.goo.gl/nxkzX74bxV6qPhcGA" },
         { "time": "Siang", "text": "Makan di area Denpasar kalau lapar" },
         { "time": "Setelah makan", "text": "Berangkat ke Pelabuhan Gilimanuk, istirahat beberapa kali di jalan" },
-        { "time": "Setelah nyebrang", "text": "Jemput adik Aay di Stasiun Ketapang, lalu pulang" }
+        { "time": "Setelah nyebrang", "text": "Jemput adik Aay di Stasiun Ketapang, lalu pulang", "mapsUrl": "https://maps.app.goo.gl/4E8NCMJSqj3sXgMTA" }
       ],
       "outfits": [{ "event": "Seharian", "aay": "Comfort OOTD", "wull": "Comfort OOTD" }],
       "meals": { "breakfast": "", "lunch": "Warung Pink Tempong / Nasi Tempong Indra", "dinner": "Sate pinggir jalan?" },
@@ -68,7 +68,7 @@
     {
       "date": "2026-11-29", "title": "Pulau Tabuhan", "area": "Bangsring", "timezone": "WIB", "image": "selat.jpg",
       "items": [
-        { "time": "Sebelum 07:30", "text": "Tiba di meeting point Pantai Grand Watudodol" },
+        { "time": "Sebelum 07:30", "text": "Tiba di meeting point Pantai Grand Watudodol", "mapsUrl": "https://maps.app.goo.gl/rgGt6nvXQziarJSK7" },
         { "time": "07:45", "text": "Briefing, fitting alat, dan persiapan" },
         { "time": "08:00", "text": "Menyeberang ke Pulau Tabuhan" },
         { "time": "08:45", "text": "Keliling pulau dan foto di takat pasir" },
@@ -89,7 +89,7 @@
       "items": [
         { "time": "Sekitar 09:00", "text": "Kumpul di Pantai Pancer untuk Private Trip Paket B", "mapsUrl": "https://maps.app.goo.gl/CJY7GwVqm99tNNgk7", "tentative": true },
         { "time": "Setelah kumpul", "text": "Puncak Green Island, Pantai Green Island, Spot T, Pantai Wedi Ireng, dan Icon Bedil (tentatif)" },
-        { "time": "Setelah Green Island", "text": "Djawatan" }
+        { "time": "Setelah Green Island", "text": "Djawatan", "mapsUrl": "https://maps.app.goo.gl/a3ziNSR1GM1oxkiC9" }
       ],
       "outfits": [
         { "event": "Green Island", "aay": "White long dress, contrast leather sandals, loose curls hair", "wull": "White shirt, cream short pants, brown shoes" },
@@ -103,7 +103,7 @@
       "items": [
         { "time": "Pagi", "text": "Jemput Aal dan Habib di rumah" },
         { "time": "Belum booking", "text": "Rafting Kali Sawah paket Adventure, sekitar 4,5 km, 1,5-2 jam", "mapsUrl": "https://maps.app.goo.gl/VyKH35fESNABTKTh6", "tentative": true },
-        { "time": "Belum booking", "text": "Bangsring Underwater", "tentative": true },
+        { "time": "Belum booking", "text": "Bangsring Underwater", "mapsUrl": "https://maps.app.goo.gl/P23dtem4KVXY5zHN8", "tentative": true },
         { "time": "Malam", "text": "Packing" }
       ],
       "outfits": [
@@ -148,7 +148,7 @@
       "items": [
         { "time": "Sebelum 12:00", "text": "Check-out Beten Kepah Villas" },
         { "time": "Siang-sore", "text": "Main di sekitar Seminyak dan Canggu", "tentative": true },
-        { "time": "20:40", "text": "Penerbangan Aay dari Ngurah Rai" }
+        { "time": "20:40", "text": "Penerbangan Aay dari Ngurah Rai", "mapsUrl": "https://maps.app.goo.gl/1DEm3zJNr4r8DwTX7" }
       ],
       "outfits": [
         { "event": "Main", "aay": "Navy knit gold button, white mini skirt, black slingback", "wull": "Navy polo shirt, white long pants, black/brown loafer" },
